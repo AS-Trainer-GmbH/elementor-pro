@@ -1,0 +1,16 @@
+{
+  "name": "AS-Trainer-GmbH/elementor-pro",
+  "description": "",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/AS-Trainer-GmbH/elementor-pro",
+  "authors": [
+    {
+      "name": "Elementor.com",
+      "homepage": "https://elementor.com"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.4"
+  }
+}
