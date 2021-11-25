@@ -511,22 +511,22 @@ class Animated_Headline extends Base_Widget {
 		?>
 		<<?php Utils::print_validated_html_tag( $tag ); ?> <?php $this->print_render_attribute_string( 'headline' ); ?>>
 		<?php if ( ! empty( $settings['before_text'] ) ) : ?>
-			<span class="elementor-headline-plain-text elementor-headline-text-wrapper"><?php echo esc_html( $settings['before_text'] ); ?></span>
+			<span class="elementor-headline-plain-text elementor-headline-text-wrapper"><?php $this->print_unescaped_setting( 'before_text' ); ?></span>
 		<?php endif; ?>
 		<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
 		<?php if ( 'rotate' === $settings['headline_style'] && $settings['rotating_text'] ) :
 			$rotating_text = explode( "\n", $settings['rotating_text'] );
 			foreach ( $rotating_text as $key => $text ) : ?>
 			<span class="elementor-headline-dynamic-text<?php echo 1 > $key ? ' elementor-headline-text-active' : ''; ?>">
-				<?php echo esc_html( str_replace( ' ', '&nbsp;', $text ) ); ?>
+				<?php Utils::print_unescaped_internal_string( str_replace( ' ', '&nbsp;', $text ) ); ?>
 			</span>
 		<?php endforeach; ?>
 		<?php elseif ( 'highlight' === $settings['headline_style'] && ! empty( $settings['highlighted_text'] ) ) : ?>
-			<span class="elementor-headline-dynamic-text elementor-headline-text-active"><?php echo esc_html( $settings['highlighted_text'] ); ?></span>
+			<span class="elementor-headline-dynamic-text elementor-headline-text-active"><?php $this->print_unescaped_setting( 'highlighted_text' ); ?></span>
 		<?php endif ?>
 		</span>
 		<?php if ( ! empty( $settings['after_text'] ) ) : ?>
-			<span class="elementor-headline-plain-text elementor-headline-text-wrapper"><?php echo esc_html( $settings['after_text'] ); ?></span>
+			<span class="elementor-headline-plain-text elementor-headline-text-wrapper"><?php $this->print_unescaped_setting( 'after_text' ); ?></span>
 			<?php endif; ?>
 		</<?php Utils::print_validated_html_tag( $tag ); ?>>
 		<?php

@@ -1063,7 +1063,7 @@ class Cart extends Base_Widget {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'order_summary_title_typography',
-				'selector' => '{{WRAPPER}} .e-shop-table .cart th',
+				'selector' => '{{WRAPPER}} .e-shop-table .cart th, {{WRAPPER}} .e-shop-table .cart td:before',
 			]
 		);
 
@@ -1072,7 +1072,7 @@ class Cart extends Base_Widget {
 			[
 				'name' => 'order_summary_title_text_shadow',
 				'label' => esc_html__( 'Text Shadow', 'elementor-pro' ),
-				'selector' => '{{WRAPPER}} .e-shop-table .cart th',
+				'selector' => '{{WRAPPER}} .e-shop-table .cart th, {{WRAPPER}} .e-shop-table .cart td:before',
 			]
 		);
 

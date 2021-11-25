@@ -31,7 +31,7 @@ class Settings_Woocommerce extends Tab_Base {
 	}
 
 	public function get_help_url() {
-		return 'go.elementor.com/global-woocommerce';
+		return 'https://go.elementor.com/global-woocommerce';
 	}
 
 	protected function register_tab_controls() {

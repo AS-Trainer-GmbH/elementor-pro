@@ -119,11 +119,7 @@ class Component extends Module_Base {
 			'before'
 		);
 
-		wp_set_script_translations(
-			'form-submission-admin',
-			'elementor-pro',
-			ELEMENTOR_PRO_PATH . 'languages'
-		);
+		wp_set_script_translations( 'form-submission-admin', 'elementor-pro' );
 	}
 
 	private function scheduled_submissions_delete() {

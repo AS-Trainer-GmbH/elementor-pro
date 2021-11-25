@@ -1623,6 +1623,8 @@ body.elementor-default .elementor-widget-woocommerce-menu-cart:not(.elementor-me
     .elementor-widget-woocommerce-cart .woocommerce .cart th {
       padding-bottom: var(--order-summary-title-spacing, 8px);
       color: var(--order-summary-title-color, #000000); }
+    .elementor-widget-woocommerce-cart .woocommerce .cart td::before {
+      color: var(--order-summary-title-color, #000000); }
     .elementor-widget-woocommerce-cart .woocommerce .shipping-calculator-button::after {
       display: none; }
     .elementor-widget-woocommerce-cart .woocommerce .product-name .variation {
@@ -5774,11 +5776,13 @@ body.rtl .elementor-widget-slides .elementor-swiper-button-prev {
       flex-grow: 1; }
     .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li {
       display: flex; }
-      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li ul {
+      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li ul, .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li > .scroll-down {
         top: 100% !important; }
-      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) a {
+      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) > a {
         margin-inline-start: var(--e-nav-menu-horizontal-menu-item-margin); }
-      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child) a {
+      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) > ul, .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) > .scroll-down, .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) > .scroll-up {
+        right: var(--e-nav-menu-horizontal-menu-item-margin) !important; }
+      .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child) > a {
         margin-inline-end: var(--e-nav-menu-horizontal-menu-item-margin); }
       .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child):after {
         content: var(--e-nav-menu-divider-content, none);

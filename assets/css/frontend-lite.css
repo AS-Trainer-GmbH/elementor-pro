@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.5.0 - 01-11-2021 */
+/*! elementor-pro - v3.5.1 - 10-11-2021 */
 .elementor-bg-transform .elementor-bg {
   will-change: transform; }
 
@@ -1934,6 +1934,8 @@ body.elementor-default .elementor-widget-woocommerce-menu-cart:not(.elementor-me
       color: var(--sections-title-color, #000000); }
     .elementor-widget-woocommerce-cart .woocommerce .cart th {
       padding-bottom: var(--order-summary-title-spacing, 8px);
+      color: var(--order-summary-title-color, #000000); }
+    .elementor-widget-woocommerce-cart .woocommerce .cart td::before {
       color: var(--order-summary-title-color, #000000); }
     .elementor-widget-woocommerce-cart .woocommerce .shipping-calculator-button::after {
       display: none; }
