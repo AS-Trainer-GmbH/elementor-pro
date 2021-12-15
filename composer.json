@@ -1,5 +1,5 @@
 {
-  "name": "AS-Trainer-GmbH/elementor-pro",
+  "name": "as-trainer-gmbh/elementor-pro",
   "description": "",
   "keywords": ["wordpress", "plugin"],
   "homepage": "https://github.com/AS-Trainer-GmbH/elementor-pro",
@@ -11,6 +11,8 @@
   ],
   "type": "wordpress-plugin",
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.6",
+    "roots/wordpress": ">=5.0",
+    "wpackagist-plugin/elementor": "^3.5"
   }
 }
